@@ -29,8 +29,18 @@
     }
     .logo {
         cursor: pointer;
+        display: flex;
+        align-items: center;
         img {
             height: 50px;
+            border-radius: 50%; // Makes the logo round
+            border: 2px solid var(--white); // Optional: Adds a white border around the logo
+            padding: 5px; // Optional: Adds padding inside the border
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1); // Slightly enlarges the logo on hover for a nice effect
+            }
         }
     }
     .menuItems {
